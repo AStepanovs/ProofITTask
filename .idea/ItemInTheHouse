@@ -1,0 +1,22 @@
+// Class 1
+// Helper class
+// Item class
+class ItemInTheHouse {
+
+	// Member variables of this class
+	public String name;
+	public double sumInsured;
+	public boolean fireInsured;
+	public boolean theftInsured;
+
+	// Constructor of this class
+	ItemInTheHouse(String name, double sumInsured, boolean fireInsured, boolen theftInsured)
+	{
+
+		// This keyword refers top current instance
+		this.name = name;
+		this.sumInsured = sumInsured;
+		this.fireInsured = fireInsured;
+		this.theftInsured = theftInsured;
+	}
+}

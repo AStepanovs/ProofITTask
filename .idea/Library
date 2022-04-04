@@ -1,0 +1,23 @@
+// Class 2
+// Helper class
+// House class contains list of items.
+class House {
+
+	// Reference to refer to list of items.
+	private final List<ItemInTheHouse> items;
+
+	// Constructor of this class
+	House(List<ItemInTheHouse> items)
+	{
+
+		// This keyword refers to current instance itself
+		this.items = items;
+	}
+
+	// Method of this class
+	// Getting the list of items
+	public List<ItemInTheHouse> getListOfItemsInHouse()
+	{
+		return items;
+	}
+}

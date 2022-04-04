@@ -1,0 +1,50 @@
+
+// Importing required classes
+import java.io.*;
+import java.util.*;
+
+class Policy {
+
+	// Main driver method
+	public static void main(String[] args)
+	{
+
+		// Creating the objects of class 1 (Item class)
+		// inside main() method
+		ItemInTheHouse item1
+			= new ItemInTheHouse("TV", 158.98, true, true);
+		ItemInTheHouse item2
+			= new ItemInTheHouse("Refridgerator", 499.99, true, true);
+		ItemInTheHouse item3 = new ItemInTheHouse("Dinner table",0.01, true, true);
+
+		// Creating the list which contains the
+		// no. of items.
+		List<ItemInTheHouse> item = new ArrayList<ItemInTheHouse>();
+
+		// Adding items to List object
+		// using standard add() method
+		item.add(item1);
+		item.add(item2);
+		item.add(item3);
+
+		// Creating an object of class 2
+		House house = new House(item);
+
+		// Calling method of class 2 and storing list of
+		// items in List Here List is declared of type
+		// Items(user-defined)
+		List<ItemInTheHouse> items
+			= library.getListOfItemsInTheHouse();
+
+		// Iterating over for each loop
+		for (ItemInTheHouse i : items) {
+
+			// Print and display the title and author of
+			// books inside List object
+			System.out.println("Name : " + i.name
+							+ " Sum insured: " + i.sumInsured
+							+ " Risk type FIRE : " + i.fireInsured
+							+ " Risk type THEFT : " + i.theftInsured);
+		}
+	}
+}
